@@ -9,15 +9,21 @@
         border:1px solid black;
         background-color: tan;
       }
+
+      .search_container {
+        margin-bottom: 20px;
+      }
       
       </style>
 </head>
 <body>
   <div>
+    <div class="search_container">
     <h1> Data Mengakses Akhir Rekeningku (Kripto)</h1>
-    <label> Cari Kode :</label><input type="text">
-    <button>Cari</button><br><br>
-    <table style="width:100%">
+    <label> Cari Kode :</label><input type="text" id="searching" placeholder="cari apa cuy">
+    <button onclick="searchData()">Cari</button>
+  </div>
+    <table id="dataTable" style="width:100%">
       <thead>
           <th>accid</th>
           <th>code</th>
